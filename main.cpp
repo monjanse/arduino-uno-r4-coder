@@ -1,5 +1,38 @@
-// Legg det inn her!
+/*
+ * Roy var her...
+ * vim:ts=4:sw=4:sts=4:et:ai:fdm=marker
+ */
 
 #include <Arduino.h>
 
-// blabla
+// Pinner og sånt
+static int serial_baud = 115200;
+static int joystick1_x_pin = A0;
+static int joystick1_y_pin = A1;
+static int joystick1_knapp_pin = 2;
+
+// Setup-rutina vår
+void setup() {
+	Serial.begin(serial_baud);
+	analogReadResolution(14); //change to 14-bit resolution
+	pinMode(joystick1_knapp_pin, INPUT_PULLUP);
+}
+
+int joystick1_xpos, joystick1_ypos, joystick1_knapp;
+
+// Løkka vår
+void loop() {
+    joystick1_xpos = analogRead(joystick1_x_pin);
+    joystick1_ypos = analogRead(joystick1_y_pin);
+    joystick1_knapp = !digitalRead(joystick1_knapp_pin);
+
+    Serial.print("X: ");
+    Serial.print(joystick1_xpos);
+    Serial.print(", Y: ");
+    Serial.print(joystick1_ypos);
+    Serial.print(", K: ");
+    Serial.print(joystick1_knapp);
+    Serial.println();
+
+    delay(100);
+}
