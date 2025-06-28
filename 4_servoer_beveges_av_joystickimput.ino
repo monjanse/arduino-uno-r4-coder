@@ -2,13 +2,13 @@
 
 Koblinger:
 
-Komponent:            Arduino Uno R4 pin:
-Joystick VRx	        A0
-Joystick SW	          D2
-Joystick GND/VCC	    GND / 5V
-PCA9685 VCC	          5V
-PCA9685 GND	          GND
-PCA9685 SDA/SCL	      SDA/SCL (I2C, vanligvis A4/A5 eller pin 20/21)
+Komponent: 			Arduino Uno R4 pin:
+Joystick VRx 			A0
+Joystick SW 			D2
+Joystick GND/VCC 		GND/5V
+PCA9685 VCC			5V
+PCA9685 GND			GND
+PCA9685 SDA/SCL			SDA/SCL (I2C, vanligvis A4/A5 eller pin 20/21)
 
 
 
