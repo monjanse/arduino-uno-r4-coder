@@ -1,35 +1,35 @@
 //readme:
 
-Koblinger:
+//Koblinger:
 
-Komponent: 			Arduino Uno R4 pin:
-Joystick VRx 			A0
-Joystick SW 			D2
-Joystick GND/VCC 		GND/5V
-PCA9685 VCC			5V
-PCA9685 GND			GND
-PCA9685 SDA/SCL			SDA/SCL (I2C, vanligvis A4/A5 eller pin 20/21)
-
-
-
-✅ Oppførsel
-
-Trykk knapp:
-
-Servo 0 → høyre.
-
-Servo 1 → venstre.
-
-Begge går tilbake når du slipper.
+//Komponent: 			Arduino Uno R4 pin:
+//Joystick VRx 			A0
+//Joystick SW 			D2
+//Joystick GND/VCC 		GND/5V
+//PCA9685 VCC			5V
+//PCA9685 GND			GND
+//PCA9685 SDA/SCL			SDA/SCL (I2C, vanligvis A4/A5 eller pin 20/21)
 
 
-Skyv joystick:
 
-Mot høyre: servo 2 → høyre.
+//✅ Oppførsel:
 
-Mot venstre: servo 3 → venstre.
+//Trykk knapp:
 
-Begge går tilbake når du slipper joystick.
+//Servo 0 → høyre.
+
+//Servo 1 → venstre.
+
+//Begge går tilbake når du slipper.
+
+
+//Skyv joystick:
+
+//Mot høyre: servo 2 → høyre.
+
+//Mot venstre: servo 3 → venstre.
+
+//Begge går tilbake når du slipper joystick.
 
 
 //koden:
